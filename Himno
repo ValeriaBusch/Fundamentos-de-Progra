@@ -8,3 +8,23 @@ Algoritmo Himno
 	Escribir "siguen hoy, en contraste armonioso,"
 	Escribir "dulces himnos de paz y de unión."
 FinAlgoritmo
+
+
+
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	cout<<"Bolivianos el hado propicio"<<endl;
+	cout<<"corono nuestros votos y anhelos;"<<endl;
+	cout<<"es ya libre, ya libre este suelo,"<<endl;
+	cout<<"ya ceso su servil condicion.";
+
+	getch ();
+}
