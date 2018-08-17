@@ -1,0 +1,12 @@
+
+
+
+Proceso AreaTriangulo
+	Escribir "Inserta la base del triángulo:"
+	Leer b
+	Escribir "Inserta la altura del triángulo:"
+	Leer a
+	A<-(b*a)/2
+	Escribir "El área del triángulo es:"
+	Escribir A
+FinProceso
