@@ -1,0 +1,9 @@
+Proceso AreaParalelogramo
+	Escribir "Inserta la base del Paralelogramo:"
+	Leer b
+	Escribir "Inserta la altura del Paralelogramo:"
+	Leer h
+	A<-b*h
+	Escribir "El área del Paralelogramo es:"
+	Escribir A
+FinProceso
