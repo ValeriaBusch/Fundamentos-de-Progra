@@ -1,4 +1,4 @@
-Proceso AreaTriangulo
+Proceso AreaCuadrado
 	Escribir "Inserta el lado del cuadrado:"
 	Leer l
 	A<-(l*l)
