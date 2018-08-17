@@ -1,0 +1,13 @@
+
+
+
+
+
+
+Proceso AreaCirculo
+	Escribir "Inserta el radio del circulo:"
+	Leer r
+	A<-r*r*3.1416
+	Escribir "El área del circulo:"
+	Escribir A
+FinProceso
