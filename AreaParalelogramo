@@ -1,3 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	int b, h;
+	cout<<"Inserte la base del paralelogramo:"<<endl;
+	cin>> b;
+	cout<<"Inserte la altura del paralelogramo:"<<endl;
+	cin>> h;
+	
+	cout<<"El área del paralelogramo es:" << (b*h)<<endl;
+	cout<<"Soy Valeria Busch";
+	getch ();
+}
+
+
 Proceso AreaParalelogramo
 	Escribir "Inserta la base del Paralelogramo:"
 	Leer b
