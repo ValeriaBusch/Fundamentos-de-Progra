@@ -1,5 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
 
+using namespace std;
 
+void main ()
+{
+	int r;
+	cout<<"Inserte el radio del circulo:"<<endl;
+	cin>> r;
+	
+	cout<<"El área del circulo es:" << r*r*3.1416 <<endl;
+	cout<<"Soy Valeria Busch";
+	getch ();
+}
 
 
 
