@@ -1,3 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	int l;
+	cout<<"Inserte un lado del cuadrado:"<<endl;
+	cin>> l;
+	
+	cout<<"El área del cuadrado es:" << (l*l)<<endl;
+	cout<<"Soy Valeria Busch";
+	getch ();
+}
+
 
 Proceso AreaCuadrado
 	Escribir "Inserta el lado del cuadrado:"
