@@ -20,3 +20,15 @@ void main()
 	cout
 	getch();
 }
+
+
+
+Proceso IntercambioVariables
+	Leer A
+	Leer B
+	aux<-A
+	A<-B
+	B<-aux
+	Escribir "El valor de a es:" ,A
+	Escribir "El valor de b es:" ,B
+FinProceso
