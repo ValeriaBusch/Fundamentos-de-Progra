@@ -20,3 +20,12 @@ using namespace std;
 
 }
 
+
+Proceso Circunferencia
+	Escribir "Inserte el radio de la circunferencia:"
+	Leer r
+	A<-r*r*3.141592
+	P<-2*3.141592*r
+	Escribir "El área de la circunferencia es:" ,A
+	Escribir "El perímetro de la circunferencia es:" ,P
+FinProceso
