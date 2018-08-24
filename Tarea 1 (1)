@@ -1,8 +1,9 @@
+// Descuentos.cpp : Defines the entry point for the console application.
+//Valeria Busch
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
 using namespace std;
-
 
 void main()
 {
@@ -11,14 +12,11 @@ void main()
 	cin>>a;
 	cout<<"poner la variable b: ";
 	cin>>b;
-	/*
-	a=5
-	b=10
-	*/
 	aux=a;
 	a=b;
 	b=aux;
 	cout<<"la nueva variable a es: "<<a<<endl;
 	cout<<"la nueva variable b es: "<<b<<endl;
+	cout
 	getch();
 }
