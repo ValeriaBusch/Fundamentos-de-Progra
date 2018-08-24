@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main() {
+	int nota1, nota2;
+	cout<<"Ingrese su primer nota: ";
+	cin>>nota1;
+	cout<<"Ingrese su segunda nota: ";
+	cin>>nota2;
+	nota2= nota1+nota2;
+	cout<<"Ingrese su tercer nota: ";
+	cin>>nota1;
+	nota1 = nota1+nota2;
+	cout<<"Ingrese su cuarta nota: ";
+	cin>>nota2;
+	nota2 = nota1+nota2;
+	cout<<"Ingrese su quinta nota: ";
+	cin>>nota1;
+	nota1 = (nota1 + nota2)/5;
+	
+	cout<<"Su promedio es: "<<nota1;
+	getch();
+}
