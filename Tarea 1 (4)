@@ -21,3 +21,18 @@ void main() {
 	cout<<"El resultado es: "<<distancia;
 	getch();
 }
+
+
+
+Proceso Distancia
+	Escribir "Valor de x:"
+	Leer X
+	Escribir "Valor de x2:"
+	Leer X2
+	Escribir "Valor de y:"
+	Leer B
+	Escribir "Valor de y2:"
+	Leer B2
+	D<-raiz((X-X2)*(X-X2))+((B-B2)*(B-B2))
+	Escribir "El resultado es:" ,D
+FinProceso
