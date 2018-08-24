@@ -25,3 +25,21 @@ void main() {
 	cout<<"Su promedio es: "<<nota1;
 	getch();
 }
+
+
+
+Proceso Promedio
+	Escribir "Ingrese su primer nota:"
+	Leer X
+	Escribir "Ingrese su segunda nota:"
+	Leer X2
+	Escribir "Ingrese su tercera nota:"
+	Leer X3
+	Escribir "Ingrese su cuarta nota:"
+	Leer X4
+	Escribir "Ingrese su quinta nota:"
+	Leer X5
+	P<-(X+X2+X3+X4+X5)/5
+	Escribir "Su promedio es:"  ,P
+FinProceso
+
