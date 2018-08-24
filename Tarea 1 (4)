@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std; 
+
+void main() {
+	float x1, x2, y1, y2, distancia;
+
+	cout<<"Por favor digite el valor de x: ";
+	cin>>x1;
+	cout<<"Por favor digite el valor de x2: ";
+	cin>>x2;
+	cout<<"Por favor digite el valor de y: ";
+	cin>>y1;
+	cout<<"Por favor digite el valor de y2: ";
+	cin>>y2;
+
+	distancia = sqrt(pow(x2-x1,2)+ pow(y2-y1,2));
+	cout<<"El resultado es: "<<distancia;
+	getch();
+}
