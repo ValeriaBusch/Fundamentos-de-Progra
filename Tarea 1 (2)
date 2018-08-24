@@ -22,7 +22,7 @@ using namespace std;
 
 
 Proceso Circunferencia
-	Escribir "Inserte el radio de la circunferencia:"
+	Escribir "Inserte el radio de la circunferencia en centímetros:"
 	Leer r
 	A<-r*r*3.141592
 	P<-2*3.141592*r
