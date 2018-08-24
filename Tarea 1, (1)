@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void main()
+{
+	float a,b,aux;
+	cout<<"poner la variable a: "; 
+	cin>>a;
+	cout<<"poner la variable b: ";
+	cin>>b;
+	/*
+	a=5
+	b=10
+	*/
+	aux=a;
+	a=b;
+	b=aux;
+	cout<<"la nueva variable a es: "<<a<<endl;
+	cout<<"la nueva variable b es: "<<b<<endl;
+	getch();
+}
