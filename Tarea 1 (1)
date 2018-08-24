@@ -1,4 +1,4 @@
-// Descuentos.cpp : Defines the entry point for the console application.
+// IntercambioVariables.cpp : Defines the entry point for the console application.
 //Valeria Busch
 #include "stdafx.h"
 #include <iostream>
