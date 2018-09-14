@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+	int e, a, n, elecciones, s;
+	cout <<"Ingrese su edad:"<<endl;
+	cin>>e;
+	if (e>=18)
+		{
+			cout<<"ANTECEDENTES PENALES?\n1.SI\n2.NO"<<endl;
+			cin>>a;
+			if (a==2)
+			{
+			 cout<<"NACIONALIDAD:\n 1.Boliviano\n 2.Extranjero"<<endl;
+			 cin>>n;
+			 cout<<"ELECCIONES PARA LAS QUE DESEA PARTICIPAR:\n 1.Municipales \n 2.Presidenciales"<<endl;
+			 cin>>elecciones;
+			 if (n==1 && elecciones==1 || elecciones==2)
+			 {
+				cout<<"Usted esta habilitado para votar"<<endl;
+			 }
+			 else
+				 cout<<"ERROR"<<endl;
+				
+				 if (n==2 && elecciones==1)
+				 {
+					 cout<<"Usted esta habilitado para votar"<<endl;
+				 }
+				 else 
+					 cout<<"Usted no puede votar."<<endl;
+
+			}
+			else
+				cout<<"Usted no puede votar."<<endl;
+        }
+	else 
+		cout<<"Usted no puede votar."<<endl;
+
+	
+
+	getch ();
+}
+
