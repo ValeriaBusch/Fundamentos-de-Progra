@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+	int n,i, num=0, suma=0;
+		cout<<"Ingrese el numero de pares a sumar"<<endl;
+		cin>>n;
+	for (i=0;i<n;i++)
+	{
+		num=num+2;
+		suma=suma+num;
+	}
+	cout<<"La suma es:"<<suma;
+
+	getch ();
+}
+
