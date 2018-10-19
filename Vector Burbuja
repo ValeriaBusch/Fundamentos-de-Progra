@@ -12,13 +12,20 @@ void mostrar(int vec[],int tam);
 
 void main()
 {   
-	do{
+
 	int n, vec[MAX], opcion;
-	cout<< "--------------MENU--------------";
-	cout<< "1. Cargar vector:";
-	cout<< "2. Ordenar vector";
-	cout<< "3. Mostrar vector";
-	cout<< "Opcion:";
+	do{
+	cout<<"Ingrese el numero de elementos:"<<endl;
+	cin>>n;
+	}while (n>MAX || n<=0);
+	
+	do{
+	cout<<"--------------MENU--------------"<<endl;
+	cout<< "1. Cargar vector:"<<endl;
+	cout<< "2. Ordenar vector"<<endl;
+	cout<< "3. Mostrar vector"<<endl;
+	cout<< "4. Salir"<<endl;
+	cout<< "Opcion:"<<endl;
 	cin>>opcion;
 	
 	switch (opcion)
@@ -32,8 +39,14 @@ void main()
 	case 3:
 	mostrar(vec,n);
 	break;
+	case 4:
+	    cout<<"Usted ha decidido salir del programa"<<endl;
+	    break;
+	default:
+		cout<<"Opcion invalida"<<endl;
+		break;
 	}
-	while (
+	}while (opcion !=4);
 	getch();
 }
 
