@@ -1,0 +1,80 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+double (indice (double vector [], double x, double tam));
+void leer (int vector[], int tam);
+void main ()
+{
+	double x, vector[100], tam, r;
+	cout<<"Ingrese el tamaño del vector"<<endl;
+	cin>>tam;
+	cout<<"Escriba el arreglo de numeros enteros"<<endl;
+	leer(vector, tam);
+    cout<<"Que numero X desea encontrar en el arreglo?"<<endl;
+	cin>>x;
+	
+	r=(indice(vector, x, tam));
+
+	cout<<"Las posiciones relativas de"<<x<<"son:"<<r<<endl;
+	getch();
+}
+
+double (indice (double vector[], double x, double tam))
+{
+	for (int i=0; i<tam; i++)
+		if (vector [i]==x)
+			cout<<i;
+
+}
+void leer (int vector[], int tam)
+{
+	for (int i=0; i<tam;i++)
+	{
+		cout<<"vector["<<i<<"]=";
+		cin>>vector[i];
+	}
+}
+
+
+
+
+
+
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "string"
+
+using namespace std;
+
+bool capicua (string frase);
+
+void main ()
+{
+	string frase, r;
+	cout<<"Ingrese la frase:"<<endl;
+	getline (cin, frase);
+    
+	r=capicua (frase);
+
+	if (r=true)
+	cout<<"Es palindromo"<<endl;
+	cout<<"No es palindromo"<<endl;
+
+}
+bool capicua (string nombre)
+{
+
+	int longitud;
+	bool r=true; 
+	longitud=nombre.length();
+	for (int i=0; i<longitud/2;i++)
+	if (nombre.at(i)!=nombre.at(longitud-1-i))
+
+		return r;
+}
