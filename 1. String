@@ -1,5 +1,4 @@
-// Practico de string
-// Ejercicio 1
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
