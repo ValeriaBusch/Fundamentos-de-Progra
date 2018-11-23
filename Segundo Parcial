@@ -1,0 +1,74 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+using namespace std;
+
+
+int nombre (int vec[], int x);
+
+void main () {
+int vec[6], x;
+
+	for(int i = 0; i < 5; i++){
+		cout<<"Ingrese valor de "<<i<<": ";
+		cin>>vec[i];
+	}
+
+cout<<"Ingrese el valor de X: ";
+cin>>x;
+cout<<nombre(vec, x);
+getch();
+}
+
+int nombre (int vec[], int x) {
+int pos;
+	for(int i = 0; i < 5; i++){
+		if (x == vec[i]){
+			pos = i;
+			cout<<pos;
+		}
+	}
+return pos;
+}
+
+
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+bool comparar (int vec[]);
+
+void main () {
+int vec[6];
+
+	for(int i = 0; i < 6; i++){
+		cout<<"Ingrese valor de "<<i<<": ";
+		cin>>vec[i];
+	}
+
+comparar(vec);
+
+if (comparar(vec) == true) 
+	cout<<"Es partidiario";
+else 
+	cout<<"No es partidiario";
+
+getch();
+}
+
+bool comparar(int vec[]) {
+int cont = 0;
+	for(int i = 0; i < 5; i++)
+		for(int j = 1; j < 6; j++)
+			if(vec[i] > vec[j])
+				return true;
+			else 
+				return false;
+
+}
