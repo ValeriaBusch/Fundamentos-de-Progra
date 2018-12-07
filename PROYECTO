@@ -1,0 +1,257 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+#include <stdlib.h>
+
+using namespace std;
+
+void main(){
+	int op, zona, zna, super;
+    do{
+		do{
+		 cout<<"Que deseas encontrar?"<<endl;
+		 cout<<"1)SUPERMERCADOS"<<endl;
+		 cout<<"2)MERCADOS"<<endl;
+		 cout<<"3)Salir"<<endl;
+		 cout<<"Digite el numero de la opcion que elija"<<endl;
+		 cin>>op;
+		 system("cls");
+	   	   if (op!=1 && op!=2 && op!=3)
+		     {
+			   cout<<"ERROR OPCION INVALIDA, INGRESE UN NUMERO VALIDO"<<endl;
+			   cout<<" "<<endl;
+		     }
+     	}while(op!=1 && op!=2 && op!=3);
+		  if (op==1)
+			  do{
+			     cout<<"Elije tu zona:"<<endl;
+			     cout<<"1)Zona NORTE"<<endl;
+				 cout<<"2)Zona SUR"<<endl;
+				 cout<<"3)Zona CENTRAL"<<endl;
+				 cout<<"4)Volver a la pagina principal"<<endl;
+				 cin>>zona;
+				 system("cls");
+				   switch(zona)
+				   {
+				   case 1:
+					   cout<<"Estos son los SUPERMERCADOS que se encuentran en tu zona:"<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"----------------------SUPERMERCADOS HIPERMAXI----------------------"<<endl;
+					   cout<<"Av. Banzer esq. 3er. Anillo, Santa Cruz."<<endl;
+					   cout<<"Av. Ovidio Barbery Justiniano esq. 4to Anillo, Santa Cruz."<<endl;
+					   cout<<"Centro Comercial Las Brisas, Av. Banzer esq. 4to. Anillo, Santa Cruz."<<endl;
+					   cout<<"Av. Beni esq. 4to Anillo, Santa Cruz."<<endl;
+					   cout<<"Equipetrol, 4to. Anillo frente al Ventura Mall, Santa Cruz."<<endl;
+					   cout<<"Super Center, Av. Banzer entre 6to. Y 7mo. Anillo, Santa Cruz."<<endl;
+					   cout<<"Super Center Pampa de la Isla, Av. RN 4 Virgen de Cotoca, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-----------------------SUPERMERCADOS FIDALGA-----------------------"<<endl;
+					   cout<<"Av. Cristóbal de Mendoza, 2do. Anillo esq. Libertad, Santa Cruz."<<endl;
+					   cout<<"Av. Equipetrol y Fermín Peralta, Santa Cruz."<<endl;
+					   cout<<"Av. Beni, Barrio Hamacas no.500, Santa Cruz."<<endl;
+					   cout<<"Fidalga Cotoca, Av. RN4 Virgen de Cotoca, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"------------------------MINIMERCADOS PRONTO-------------------------"<<endl;
+					   cout<<"Central, Av. Beni, entre 1er. y 2do. Anillo, Santa Cruz."<<endl;
+					   cout<<"Av. Paraguá y 2do Anillo, Santa Cruz."<<endl;
+					   cout<<"Boulevard Condominios Sevilla, km9 carretera Norte, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-------------------------SUPERMERCADOS TIA--------------------------"<<endl;
+					   cout<<"Centro Comercial Ventura Mall, 4to Anillo, Santa Cruz."<<endl;
+					   cout<<"Av. Alemania, entre 3er. Y 4to. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"----------------------------HIPER PLAZA-----------------------------"<<endl;
+					   cout<<"Av. Banzer esq. 4to. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-----------------------------PIL EXPRESS----------------------------"<<endl;
+					   cout<<"Av. Beni esq. 5to. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   break;
+				   case 2:
+					   cout<<"Estos son los SUPERMERCADOS que se encuentran en tu zona:"<<endl;
+					   cout<<""<<endl;
+					   cout<<"----------------------SUPERMERCADOS HIPERMAXI----------------------"<<endl;
+					   cout<<"Av. Piraí esq. 2do. Anillo, Santa Cruz."<<endl;
+					   cout<<"Av. Tres Pasos al Frente, casi 3er. Anillo Interno, Santa Cruz."<<endl;
+					   cout<<"Av. Santos Dumont esq. 3er. Anillo, Santa Cruz."<<endl;
+					   cout<<"Doble Vía la Guardia esq. 4to. Anillo, Santa Cruz."<<endl;
+					   cout<<"Av. Roca y Coronado entre Calle Francisco Bernachi y Jose Luis Torres, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-----------------------SUPERMERCADOS FIDALGA-----------------------"<<endl;
+					   cout<<"Fidalga Blacutt, Av. Rene Moreno no.212, Santa Cruz."<<endl;
+					   cout<<"Av.Trompillo esq. Calle Yacuiba, Santa Cruz."<<endl;
+					   cout<<"Av. 26 de febrero esq. Av. Mariano Saucedo Sevilla no. 517, Santa Cruz."<<endl;
+					   cout<<"Colinas del Urubo, (591-3)3888163, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"------------------------------IC NORTE-----------------------------"<<endl;
+					   cout<<"3er. Anillo Interno esq. Av. Busch, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"------------------------MINIMERCADOS PRONTO-------------------------"<<endl;
+					   cout<<"Estación de Servicio Urubo, Porongo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   break;
+				   case 3:
+					   cout<<"Estos son los SUPERMERCADOS que se encuentran en tu zona:"<<endl;
+					   cout<<""<<endl;
+					   cout<<"----------------------SUPERMERCADOS HIPERMAXI----------------------"<<endl;
+					   cout<<"Calle Manuel Ignacio no.174, Santa Cruz."<<endl;
+					   cout<<"Calle Florida Esq. 21 de mayo, (591-3)3362684, Santa Cruz."<<endl;
+					   cout<<"Av. Cañoto entre Calle Rafael Peña y Cuellar, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-----------------------SUPERMERCADOS FIDALGA-----------------------"<<endl;
+					   cout<<"Ekko Fidalga, Av. Cañoto entre Calle Rafael Peña y Cuellar, Santa Cruz."<<endl;
+					   cout<<"Macro Fidalga, Avenida Uruguay y General Velasco, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-------------------------SUPERMERCADOS TIA--------------------------"<<endl;
+					   cout<<"Calle 24 de septiembre entre esq. Cuellar, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"------------------------SUPERMERCADO OKINAWA------------------------"<<endl;
+					   cout<<"Calle Quijarro entre Calle Celso Castedo y Antonio Vaca Diez, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-----------------------SUPERMERCADO EL CRISTO-----------------------"<<endl;
+					   cout<<"Av. Monseñor Rivero entre 1er. y 2do. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   cout<<"-------------------------------CHINBOL------------------------------"<<endl;
+					   cout<<"Calle Sucre entre Cobija y Barrón, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+
+					   break;
+				   case 4:
+					   cout<<"Saliendo..."<<endl;
+					   system ("pause");
+					   system ("cls");
+				   default:
+					   cout<<"ERROR OPCION INVALIDA"<<endl;
+					   cout<<" "<<endl; 
+				   break;
+				   }
+			  }while (zona!=4);
+		  if (op==2)
+                do{
+				 cout<<"Elije tu zona:"<<endl;
+			     cout<<"1)Zona NORTE"<<endl;
+				 cout<<"2)Zona SUR"<<endl;
+				 cout<<"3)Zona CENTRAL"<<endl;
+				 cout<<"4)Volver a la pagina principal"<<endl;
+				 cin>>zna;
+				 system("cls");
+				 switch(zna)
+				   {
+				   case 1:
+					   cout<<"Estos son los MERCADOS que se encuentran en tu zona:"<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO 4 DE NOVIEMBRE"<<endl;
+					   cout<<"Av. Hernando Sarabia esq. Roque Aguilera, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO BELEN"<<endl;
+					   cout<<"Radial 26 casi 4to. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO MUTUALISTA"<<endl;
+					   cout<<"3er. Anillo externo y Av. Mutualista, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO CHACARILLA"<<endl;
+					   cout<<"Calle Pedro Almaraz entre entre Diego Guerra y Gilberto Molina, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO LAS PAMPITAS"<<endl;
+					   cout<<"Av. Las Pampas y Calle 2, carretera Cotoca, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO MODELO SAN JORGE"<<endl;
+					   cout<<"8vo. Anillo calle extension Av. Canal Guapilo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO MUNICIPAL VIRGEN DE LUJAN"<<endl;
+					   cout<<"Av. Virgen de Lujan casi 8vo. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO GUAPILO NORTE"<<endl;
+					   cout<<"Carretera Cotoca 10mo. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO MINORISTA LOS POZOS"<<endl;
+					   cout<<"Av. Alemania entre 7mo y 8vo. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   break;
+				   case 2:
+					   cout<<"Estos son los MERCADOS que se encuentran en tu zona:"<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO LA RAMADA"<<endl;
+					   cout<<"Calle Terebinto esq. Calle Amboro, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO MODELO EL TROMPILLO"<<endl;
+					   cout<<"Calle Melquiades Barbery, zona San Aurelio, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO RAMAFA"<<endl;
+					   cout<<"Av. Santos Dumont calle Tumpa, 3er. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO VILLA FATIMA"<<endl;
+					   cout<<"Calle El Torno entre Tajibo y Quirusillas, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO ALTO SAN PEDRO"<<endl;
+					   cout<<"Av. Roque Aguilera 3er. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADITO CAMPESINO"<<endl;
+					   cout<<"Doble Vía La Guardia, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO SANTA CRUZ"<<endl;
+					   cout<<"Av. Santos Dumont-Nuevo Palmar, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO 26 DE ABRIL"<<endl;
+					   cout<<"Av. Colectora 5to Anillo, Tamarindo Seco, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO MUNICIPAL LA CUCHILLA"<<endl;
+					   cout<<"Av. Moscú 5to Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"NUEVO MERCADO LA RAMADA"<<endl;
+					   cout<<"Av. San Martín de Porres, entre 5to. Y 6to. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"NUEVO MERCADO MAYORISTA ABASTO II"<<endl;
+					   cout<<"6to. Anillo, zona sur, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"NUEVO MERCADO MODELO PLAN 3000"<<endl;
+					   cout<<"Av. San Aurelio y 6to. Anillo, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   break;
+				   case 3:
+					   cout<<"Estos son los MERCADOS que se encuentran en tu zona:"<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO POPULAR 24 DE SEPTIEMBRE"<<endl;
+					   cout<<"Calle 6 de agosto esq. Avaroa, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO LOS POZOS"<<endl;
+					   cout<<"Calle Quijarro entre Suarez Arana y 6 de Agosto, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO NUEVO"<<endl;
+					   cout<<"Calle Sucre entre Cochabamba y La Paz, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   cout<<"MERCADO FLORIDA"<<endl;
+					   cout<<"Calle Buenos Aires casi Av. Cañoto, Santa Cruz."<<endl;
+					   cout<<""<<endl;
+					   break;
+				   case 4:
+					   cout<<"Saliendo..."<<endl;
+					   system ("pause");
+					   system ("cls");
+				   default:
+					   cout<<"ERROR OPCION INVALIDA"<<endl;
+					   cout<<" "<<endl; 
+				   break;
+				   }
+
+				}while (zna!=4);
+		  
+     }while (op!=3);
+	
+_getch();
+}
